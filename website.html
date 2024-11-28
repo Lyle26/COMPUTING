@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magellan's Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="animated bg.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        <div class="nav-container">
+            <nav id="nav">
+                <a onclick="showSection('welcome')">Home</a>
+                <a onclick="showSection('magellan-background')">Magellan's Background</a>
+                <a onclick="showSection('ships')">Ships of Magellan</a>
+                <a onclick="showSection('about-us')">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="welcome">
+        <h3>Welcome To The Compass Of Magellan: His Life and Voyages</h3>
+    </div>
+
+    <div class="content scrollable" id="magellan-background">
+        <h2>Magellan's Background</h2>
+        <img src="ferdinand.jpg" alt="Portrait of Ferdinand Magellan" class="magellan-image">
+        <p><strong>Ferdinand Magellan</strong> was a Portuguese explorer who became famous for leading the first expedition to circumnavigate the globe, although he did not survive the journey.</p>
+        <p><strong>Full Name:</strong> Ferdinand Magellan (Portuguese: Fernão de Magalhães)</p>
+        <p><strong>Born:</strong> circa 1480, Sabrosa, Portugal</p>
+        <p><strong>Died:</strong> April 27, 1521, Mactan, Philippines</p>
+        <p><strong>Nationality:</strong> Portuguese</p>
+        <p><strong>Occupation:</strong> Explorer, Navigator, and Captain</p>
+        <p><strong>Known For:</strong> Leading the first expedition to circumnavigate the globe</p>
+
+        <h3>Early Life and Career</h3>
+        <p>Ferdinand Magellan was born around 1480 in the Kingdom of Portugal. The exact date of his birth is uncertain, but it is believed to be in the small town of Sabrosa in northern Portugal. Magellan came from a noble family, but at a young age, he was orphaned and sent to live in the court of Queen Leonor. He began his maritime career as a young man, quickly rising through the ranks due to his skill and ambition.</p>
+    
+        <h3>The Circumnavigation Expedition</h3>
+        <p>Magellan’s most significant legacy is his leadership of the first expedition to successfully circumnavigate the Earth. Despite being Portuguese, Magellan sought funding from Spain for his daring voyage after falling out of favor with the Portuguese crown. In 1519, he convinced King Charles I of Spain to sponsor his voyage to find a westward route to the Spice Islands (modern-day Indonesia), an alternative to the Portuguese-controlled route around Africa.</p>
+        <p>In September 1519, Magellan set sail from Seville, Spain, with a fleet of five ships: the <strong>Trinidad</strong>, <strong>San Antonio</strong>, <strong>Concepción</strong>, <strong>Victoria</strong>, and <strong>Santiago</strong>. The expedition faced numerous challenges, including harsh weather, mutiny, and conflict with indigenous peoples along the way. The fleet sailed across the Atlantic Ocean, down the coast of South America, and eventually found the passage through the continent that now bears his name: the <strong>Magellan Strait</strong>.</p>
+        <p>The fleet then crossed the Pacific Ocean, a treacherous and previously unexplored part of the world. Despite being faced with scurvy, hunger, and exhaustion, the expedition reached the Philippines in March 1521. However, Magellan was killed in the Philippines during a battle with the locals in the island of Mactan on April 27, 1521.</p>
+    
+        <h3>After Magellan’s Death</h3>
+        <p>Magellan did not live to complete the circumnavigation, but his expedition continued under the command of Spanish navigator <strong>Juan Sebastián Elcano</strong>. After Magellan’s death, the remaining ships made their way to the Spice Islands, where they were able to complete the mission of obtaining valuable spices. The <strong>Victoria</strong>, the only surviving ship, returned to Spain in September 1522, successfully completing the first circumnavigation of the globe.</p>
+    
+        <h3>Legacy</h3>
+        <p>Ferdinand Magellan is remembered as one of history’s greatest explorers. His voyage demonstrated the vastness of the world and opened the way for further European exploration and colonization. Magellan’s journey helped establish the importance of the Pacific Ocean and led to the first European contact with the Philippines, which later became a significant colony for Spain.</p>
+    
+        <h3>Conclusion</h3>
+        <p>Ferdinand Magellan’s legacy as the leader of the first successful circumnavigation of the Earth endures to this day. Though he faced many hardships and ultimately lost his life before completing his mission, Magellan’s name is forever associated with global exploration and the uncovering of new frontiers. His journey reshaped the world’s understanding of geography and cemented his place as one of history’s great explorers.</p>
+    </div>
+
+    <div class="content" id="ships">
+        <h2>The Ships of Magellan</h2>
+        <p>pics ng mga barko ni magellan</p>
+    </div>
+    
+    <div class="content" id="about-us">
+        <h2>About Us</h2>
+        <p></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
