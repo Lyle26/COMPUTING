@@ -36,7 +36,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -48,7 +47,7 @@ header {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    display: block;
+    display: none;
     z-index: 20;
 }
 
@@ -208,9 +207,8 @@ nav a:hover::after {
         max-width: 100%;
     }
 
-    /* Hide navigation links on small screens and show hamburger icon */
     nav {
-        display: none; /* Hide navigation by default */
+        display: none;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.9);
         position: absolute;
@@ -221,11 +219,11 @@ nav a:hover::after {
     }
 
     nav.active {
-        display: flex; /* Show navigation when active */
+        display: flex;
     }
 
-    /* Position the hamburger menu at the left corner */
     .hamburger-menu {
+        display: block;
         position: absolute;
         left: 20px;
         top: 20px;
